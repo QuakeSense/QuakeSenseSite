@@ -8,10 +8,15 @@ const faqs = [
         'QuakeSense is a global earthquake alert app that offers real-time information about earthquakes happening around the world.',
     },
     {
-      question: "Does QuakeSense collect my data?",
+      question: 'Does QuakeSense collect my data?',
       answer:
         'QuakeSense does not collect any personal data from users. The app only uses location data to provide earthquake alerts. We only apply the reduced accuracy location permission to protect your privacy.',
-    }
+    },
+    {
+      question: 'Can QuakeSense predict earthquakes before they happen?',
+      answer:
+        'Earthquakes cannot be predicted, no apps or services can predict earthquakes before they happen. QuakeSense provides real-time information about earthquakes that have already occurred.',
+    },
   ],
   [
     {
@@ -20,23 +25,23 @@ const faqs = [
         'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
     },
     {
-      question: "How does QuakeSense work?",
+      question: 'How does QuakeSense work?',
       answer:
         'QuakeSense uses data from multiple sources to provide real-time information about earthquakes. The app sends push notifications to users when an earthquake is detected near their location.',
-    }
+    },
   ],
   [
     {
-      question: "How can I download QuakeSense?",
+      question: 'How can I download QuakeSense?',
       answer:
         'You can download QuakeSense from the App Store or Google Play Store by searching for "QuakeSense" or by scanning the QR code on our website.',
     },
     {
-      question: "What technologies does QuakeSense use?",
+      question: 'What technologies does QuakeSense use?',
       answer:
         'QuakeSense uses SwiftUI for the iOS app, it is a 100% native app. Cloudflare Workers for the backend, and Tailwind CSS for the website.',
     },
-  ]
+  ],
 ]
 
 export function Faqs() {
