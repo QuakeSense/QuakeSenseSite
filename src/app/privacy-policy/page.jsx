@@ -150,7 +150,7 @@ export default function NotFound() {
 
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">
-              7. Children's Privacy
+              7. Children&apos;s Privacy
             </h2>
             <p>
               Our App does not address anyone under the age of 13. We do not

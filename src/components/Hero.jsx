@@ -13,7 +13,7 @@ export function Hero() {
               Global Earthquake Alerts
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              QuakeSense is a global earthquake notification app that provides real-time earthquake alerts and information.
+              QuakeSense is a global earthquake app that provides real-time earthquake alerts and information.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />

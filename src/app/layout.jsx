@@ -14,10 +14,10 @@ const merriweather = Merriweather({
 export const metadata = {
   title: {
     template: '%s - QuakeSense',
-    default: 'QuakeSense - Global Earthquake Notification.',
+    default: 'QuakeSense - Global Earthquake Alerts',
   },
   description:
-    'QuakeSense is a global earthquake notification app that provides real-time earthquake alerts and information.',
+    'QuakeSense is a global earthquake app that provides real-time earthquake alerts and information.',
 }
 
 export default function RootLayout({ children }) {
