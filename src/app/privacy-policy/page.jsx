@@ -7,7 +7,7 @@ export default function NotFound() {
       <Container>
         <div className="mx-auto max-w-4xl px-4 py-8">
           <h1 className="mb-6 text-3xl font-bold">QuakeSense Privacy Policy</h1>
-          <p className="mb-4">Last Updated: [2024/8/18]</p>
+          <p className="mb-4">Last Updated: 2024/8/18</p>
 
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">1. Introduction</h2>
@@ -177,7 +177,7 @@ export default function NotFound() {
               If you have any questions about this Privacy Policy, please
               contact us at:
             </p>
-            <p>[feedback@quakesense.app]</p>
+            <p>feedback@quakesense.app</p>
           </section>
         </div>
       </Container>
