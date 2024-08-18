@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { TextField } from '@/components/Fields'
 import { Logomark } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
 import qrCode from '@/images/qr-code.svg'
 
 function QrCodeBorder(props) {
@@ -29,13 +26,10 @@ export function Footer() {
             <div className="flex items-center text-gray-900">
               <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
-                <p className="text-base font-semibold">Pocket</p>
-                <p className="mt-1 text-sm">Invest at the perfect time.</p>
+                <p className="text-base font-semibold">QuakeSense</p>
+                <p className="mt-1 text-sm">Global Earthquake Alerts.</p>
               </div>
             </div>
-            <nav className="mt-11 flex gap-8">
-              <NavLinks />
-            </nav>
           </div>
           <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <div className="relative flex h-24 w-24 flex-none items-center justify-center">
@@ -46,30 +40,19 @@ export function Footer() {
               <p className="text-base font-semibold text-gray-900">
                 <Link href="#">
                   <span className="absolute inset-0 sm:rounded-2xl" />
-                  Download the app
+                  Download QuakeSense
                 </Link>
               </p>
               <p className="mt-1 text-sm text-gray-700">
-                Scan the QR code to download the app from the App Store.
+                Scan the QR code to download QuakeSense from the App Store.
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
-          <form className="flex w-full justify-center md:w-auto">
-            <TextField
-              type="email"
-              aria-label="Email address"
-              placeholder="Email address"
-              autoComplete="email"
-              required
-              className="w-60 min-w-0 shrink"
-            />
-            <Button type="submit" color="cyan" className="ml-4 flex-none">
-              <span className="hidden lg:inline">Join our newsletter</span>
-              <span className="lg:hidden">Join newsletter</span>
-            </Button>
-          </form>
+        <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">  
+          <Link href="/privacy-policy">
+            <span className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Privacy Policy</span>
+          </Link>
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
             &copy; Copyright {new Date().getFullYear()}. All rights reserved.
           </p>

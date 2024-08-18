@@ -1,27 +1,29 @@
-import { Inter } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 
-const inter = Inter({
+const merriweather = Merriweather({
   subsets: ['latin'],
+  weight: ['300', '400', '700', '900'],
+  style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-merriweather',
 })
 
 export const metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: '%s - QuakeSense',
+    default: 'QuakeSense - Global Earthquake Notification.',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'QuakeSense is a global earthquake notification app that provides real-time earthquake alerts and information.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={clsx('bg-gray-50 antialiased', inter.variable)}>
-      <body>{children}</body>
+    <html lang="en" className={clsx('bg-gray-50 antialiased', merriweather.variable)}>
+      <body className="font-serif">{children}</body>
     </html>
   )
 }

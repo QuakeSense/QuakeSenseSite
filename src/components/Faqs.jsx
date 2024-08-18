@@ -3,55 +3,40 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'What is QuakeSense?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'QuakeSense is a global earthquake alert app that offers real-time information about earthquakes happening around the world.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: "Does QuakeSense collect my data?",
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
-    },
-    {
-      question: 'But isn’t insider trading illegal?',
-      answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
+        'QuakeSense does not collect any personal data from users. The app only uses location data to provide earthquake alerts. We only apply the reduced accuracy location permission to protect your privacy.',
+    }
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
+      question: "What is the source of Quake Sense's data?",
       answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+        'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
     },
     {
-      question: 'Where is Pocket based?',
+      question: "How does QuakeSense work?",
       answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
-    },
+        'QuakeSense uses data from multiple sources to provide real-time information about earthquakes. The app sends push notifications to users when an earthquake is detected near their location.',
+    }
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: "How can I download QuakeSense?",
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'You can download QuakeSense from the App Store or Google Play Store by searching for "QuakeSense" or by scanning the QR code on our website.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: "What technologies does QuakeSense use?",
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'QuakeSense uses SwiftUI for the iOS app, it is a 100% native app. Cloudflare Workers for the backend, and Tailwind CSS for the website.',
     },
-    {
-      question: 'How do I become an insider?',
-      answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
-    },
-  ],
+  ]
 ]
 
 export function Faqs() {

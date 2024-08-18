@@ -38,7 +38,7 @@ module.exports = {
         gray: colors.neutral,
       }),
       fontFamily: {
-        sans: 'var(--font-inter)',
+        serif: 'var(--font-merriweather)',
       },
       keyframes: {
         'fade-in': {
