@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import clsx from 'clsx'
-import screenshot from '@/images/244shots_so.png'  
+import screenshot from '@/images/810shots_so.png'  
 
 export function PhoneFrame({
   className,
