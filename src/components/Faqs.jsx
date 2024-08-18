@@ -15,7 +15,7 @@ const faqs = [
     {
       question: 'Can QuakeSense predict earthquakes before they happen?',
       answer:
-        'Earthquakes cannot be predicted, no apps or services can predict earthquakes before they happen. QuakeSense provides real-time information about earthquakes that have already occurred.',
+        'Earthquakes cannot be predicted, and no apps or services can forecast them. However, QuakeSense offers real-time information about earthquakes that have already occurred.',
     },
   ],
   [
