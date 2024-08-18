@@ -8,9 +8,16 @@ const faqs = [
         'QuakeSense is a global earthquake alert app that offers real-time information about earthquakes happening around the world.',
     },
     {
-      question: 'Does QuakeSense collect my data?',
+      question: "What is the source of Quake Sense's data?",
       answer:
-        'QuakeSense does not collect any personal data from users. The app only uses location data to provide earthquake alerts. We only apply the reduced accuracy location permission to protect your privacy.',
+        'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
+    },
+  ],
+  [
+    {
+      question: 'How does QuakeSense work?',
+      answer:
+        'QuakeSense uses data from multiple sources to provide real-time information about earthquakes. The app sends push notifications to users when an earthquake is detected near their location.',
     },
     {
       question: 'Can QuakeSense predict earthquakes before they happen?',
@@ -20,21 +27,9 @@ const faqs = [
   ],
   [
     {
-      question: "What is the source of Quake Sense's data?",
+      question: 'Does QuakeSense collect my data?',
       answer:
-        'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
-    },
-    {
-      question: 'How does QuakeSense work?',
-      answer:
-        'QuakeSense uses data from multiple sources to provide real-time information about earthquakes. The app sends push notifications to users when an earthquake is detected near their location.',
-    },
-  ],
-  [
-    {
-      question: 'How can I download QuakeSense?',
-      answer:
-        'You can download QuakeSense from the App Store or Google Play Store by searching for "QuakeSense" or by scanning the QR code on our website.',
+        'QuakeSense does not collect any personal data from users. The app only uses location data to provide earthquake alerts. We only apply the reduced accuracy location permission to protect your privacy.',
     },
     {
       question: 'What technologies does QuakeSense use?',
