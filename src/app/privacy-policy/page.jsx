@@ -12,12 +12,13 @@ export default function NotFound() {
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">1. Introduction</h2>
             <p>
-              QuakeSense ("we", "our", or "us") is committed to protecting your
-              privacy. This Privacy Policy explains how we collect, use,
-              disclose, and safeguard your information when you use our
-              QuakeSense mobile application (the "App"). Please read this
-              privacy policy carefully. If you do not agree with the terms of
-              this privacy policy, please do not access the App.
+              QuakeSense (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is
+              committed to protecting your privacy. This Privacy Policy explains
+              how we collect, use, disclose, and safeguard your information when
+              you use our QuakeSense mobile application (the &quot;App&quot;).
+              Please read this privacy policy carefully. If you do not agree
+              with the terms of this privacy policy, please do not access the
+              App.
             </p>
           </section>
 
@@ -143,7 +144,7 @@ export default function NotFound() {
             </p>
             <p>
               To exercise any of these rights, please contact us using the
-              information provided in the "Contact Us" section.
+              information provided in the &quot;Contact Us&quot; section.
             </p>
           </section>
 
@@ -165,7 +166,7 @@ export default function NotFound() {
             <p>
               We may update our Privacy Policy from time to time. We will notify
               you of any changes by posting the new Privacy Policy on this page
-              and updating the "Last Updated" date at the top of this Privacy
+              and updating the &quot;Last Updated&quot; date at the top of this Privacy
               Policy.
             </p>
           </section>
