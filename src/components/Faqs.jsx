@@ -12,6 +12,11 @@ const faqs = [
       answer:
         'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
     },
+    {
+      question: "Why did I get several earthquake notifications?",
+      answer:
+        'QuakeSense uses data from multiple sources to provide the most accurate information about earthquakes. If multiple sources report the same earthquake, you may receive multiple notifications. Different sources may also report different magnitudes for the same earthquake. Same source may also update the magnitude of the earthquake.',
+    }
   ],
   [
     {
