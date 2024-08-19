@@ -27,7 +27,7 @@ const faqs = [
     {
       question: 'Can QuakeSense predict earthquakes before they happen?',
       answer:
-        'Earthquakes cannot be predicted, and no apps or services can forecast them. However, QuakeSense offers real-time information about earthquakes that have already occurred. Earthquake early warning systems face significant challenges due to cumulative delays in detection, processing, and communication, which often exceed the travel time of seismic waves to populated areas. This technological gap results in many systems only being able to notify users after shaking has begun, rather than providing advance warning, thus limiting the effectiveness of current earthquake early warning efforts.',
+        'Earthquakes cannot be predicted, and no apps or services can forecast them. However, QuakeSense provides real-time information about past earthquakes. Earthquake early warning systems struggle with delays in detection, processing, and communication that often exceed the travel time of seismic waves to populated areas. As a result, many systems can only alert users after shaking has started instead of offering advance warnings.',
     },
   ],
   [
