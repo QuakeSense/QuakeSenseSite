@@ -50,7 +50,7 @@ const EarthquakeStats = () => {
             Global Seismic Activity
           </h2>
           <p className="mt-4 text-xl text-white">
-            Real-time insights into Earth's tectonic movements
+            Real-time insights into Earth tectonic movements
           </p>
           {isLoading && (
             <div className="mt-10 flex justify-center">
@@ -59,7 +59,7 @@ const EarthquakeStats = () => {
           )}
           {error && (
             <p className="mt-10 rounded-lg bg-red-900/20 p-4 text-lg text-white">
-              Error: {error}
+              {error}
             </p>
           )}
           {earthquakeData && (
@@ -80,19 +80,19 @@ const EarthquakeStats = () => {
                   </h3>
                   <div className="space-y-2 text-left">
                     <p className="flex justify-between">
-                      <span className="text-white">Location:</span>
+                      <span className="text-white">Location: </span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].location}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Magnitude:</span>
+                      <span className="text-white">Magnitude: </span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].magnitude}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Time:</span>
+                      <span className="text-white">Time: </span>
                       <span className="font-medium text-white">
                         {new Date(
                           earthquakeData.data[0].time * 1000,
@@ -100,7 +100,7 @@ const EarthquakeStats = () => {
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Depth:</span>
+                      <span className="text-white">Depth: </span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].depth} km
                       </span>
