@@ -36,7 +36,7 @@ const EarthquakeStats = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-yellow-600 to-yellow-500 py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br from-yellow-300 to-yellow-100 py-20 sm:py-28">
       <div className="bg-grid-white/[0.05] bg-grid-16 absolute inset-0 [mask-image:radial-gradient(white,transparent_70%)]" />
       <div className="absolute inset-0">
         <CircleBackground
@@ -46,10 +46,10 @@ const EarthquakeStats = () => {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Global Seismic Activity
           </h2>
-          <p className="mt-4 text-xl text-white">
+          <p className="mt-4 text-xl text-gray-900">
             Real-time insights into Earth tectonic movements
           </p>
           {isLoading && (
@@ -58,49 +58,49 @@ const EarthquakeStats = () => {
             </div>
           )}
           {error && (
-            <p className="mt-10 rounded-lg bg-red-900/20 p-4 text-lg text-white">
+            <p className="mt-10 rounded-lg bg-red-900/20 p-4 text-lg text-gray-900">
               {error}
             </p>
           )}
           {earthquakeData && (
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               <div className="flex h-full flex-col items-center justify-center rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
-                <h3 className="mb-4 text-2xl font-semibold text-white">
+                <h3 className="mb-4 text-2xl font-semibold text-gray-900">
                   Last 24 Hours
                 </h3>
-                <p className="mb-2 text-6xl font-bold text-white">
+                <p className="mb-2 text-6xl font-bold text-gray-900">
                   {earthquakeData.total}
                 </p>
-                <p className="text-xl text-white">Total Earthquakes</p>
+                <p className="text-xl text-gray-900">Total Earthquakes</p>
               </div>
               {earthquakeData.data[0] && (
                 <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
-                  <h3 className="mb-4 text-2xl font-semibold text-white">
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-900">
                     Latest Event
                   </h3>
                   <div className="space-y-2 text-left">
                     <p className="flex justify-center">
-                      <span className="truncate font-medium text-white">
+                      <span className="truncate font-medium text-gray-900">
                         {earthquakeData.data[0].location}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Magnitude:</span>
-                      <span className="font-medium text-white">
+                      <span className="text-gray-900">Magnitude:</span>
+                      <span className="font-medium text-gray-900">
                         {earthquakeData.data[0].magnitude}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Time:</span>
-                      <span className="font-medium text-white">
+                      <span className="text-gray-900">Time:</span>
+                      <span className="font-medium text-gray-900">
                         {new Date(
                           earthquakeData.data[0].time * 1000,
                         ).toLocaleString()}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">Depth:</span>
-                      <span className="font-medium text-white">
+                      <span className="text-gray-900">Depth:</span>
+                      <span className="font-medium text-gray-900">
                         {earthquakeData.data[0].depth} km
                       </span>
                     </p>
