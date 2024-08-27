@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { Container } from '@/components/Container'
-import { CircleBackground } from '@/components/CircleBackground'
 import {
   MapContainer,
   TileLayer,
@@ -16,6 +15,7 @@ const EarthquakeStats = () => {
   const [earthquakeData, setEarthquakeData] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [animatedTotal, setAnimatedTotal] = useState(0)
   const fetchedRef = useRef(false)
 
   useEffect(() => {
@@ -33,6 +33,7 @@ const EarthquakeStats = () => {
         }
         const data = await response.json()
         setEarthquakeData(data)
+        animateTotal(data.total)
       } catch (error) {
         setError(error.message)
       } finally {
@@ -42,6 +43,20 @@ const EarthquakeStats = () => {
 
     fetchEarthquakeData()
   }, [])
+
+  const animateTotal = (total) => {
+    let start = 0
+    const duration = 2000 // 2 seconds
+    const step = (timestamp) => {
+      if (!start) start = timestamp
+      const progress = Math.min((timestamp - start) / duration, 1)
+      setAnimatedTotal(Math.floor(progress * total))
+      if (progress < 1) {
+        window.requestAnimationFrame(step)
+      }
+    }
+    window.requestAnimationFrame(step)
+  }
 
   const EarthquakeMarker = ({ earthquake }) => {
     const [opacity, setOpacity] = useState(0.8)
@@ -114,24 +129,18 @@ const EarthquakeStats = () => {
 
   return (
     <section className="relative overflow-hidden border-t border-gray-200 bg-gradient-to-br py-20 sm:py-28">
-      <div className="bg-grid-white/[0.05] bg-grid-16 absolute inset-0 [mask-image:radial-gradient(white,transparent_70%)]" />
-      <div className="absolute inset-0">
-        <CircleBackground
-          color="#fff"
-          className="absolute -left-[50%] -top-[50%] h-[200%] w-[200%] animate-spin-slower"
-        />
-      </div>
+      <div className="bg-grid-gray/[0.05] bg-grid-16 absolute inset-0 [mask-image:radial-gradient(gray,transparent_70%)]" />
       <Container className="relative">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-10 text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          {/* <h2 className="mb-10 text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Global Seismic Activity
           </h2>
           <p className="mb-10 mt-4 text-center text-xl text-gray-900">
             Real-time insights into Earth tectonic movements
-          </p>
+          </p> */}
           {isLoading && (
             <div className="flex justify-center">
-              <div className="h-12 w-12 animate-spin rounded-full border-4 border-white border-t-transparent"></div>
+              <div className="h-12 w-12 animate-spin rounded-full border-4 border-gray-200 border-t-transparent"></div>
             </div>
           )}
           {error && (
@@ -147,7 +156,7 @@ const EarthquakeStats = () => {
                     Last 24 Hours
                   </h3>
                   <p className="mb-2 text-6xl font-bold text-gray-900">
-                    {earthquakeData.total}
+                    {animatedTotal}
                   </p>
                   <p className="text-xl text-gray-900">Total Earthquakes</p>
                 </div>
