@@ -1,7 +1,8 @@
+'use client';
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Container } from '@/components/Container'
 import { CircleBackground } from '@/components/CircleBackground'
-import { Globe2, Activity, Clock, Ruler } from 'lucide-react';
 
 const EarthquakeStats = () => {
   const [earthquakeData, setEarthquakeData] = useState(null);
@@ -11,8 +12,8 @@ const EarthquakeStats = () => {
 
   useEffect(() => {
     const fetchEarthquakeData = async () => {
-      if (fetchedRef.current) return;
-      fetchedRef.current = true;
+      if (fetchedRef.current) return; // 如果已经发出请求，则直接返回
+      fetchedRef.current = true; // 标记已发出请求
 
       const twentyFourHoursAgo = Math.floor(Date.now() / 1000) - 24 * 60 * 60;
       const url = `/api?since=${twentyFourHoursAgo}`;
@@ -46,9 +47,9 @@ const EarthquakeStats = () => {
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            <Globe2 className="inline-block mr-2 mb-1" /> Global Seismic Activity
+            Global Seismic Activity
           </h2>
-          <p className="mt-4 text-xl text-yellow-100">
+          <p className="mt-4 text-xl text-white">
             Real-time insights into Earth's tectonic movements
           </p>
           {isLoading && (
@@ -57,7 +58,7 @@ const EarthquakeStats = () => {
             </div>
           )}
           {error && (
-            <p className="mt-10 rounded-lg bg-red-900/20 p-4 text-lg text-red-300">
+            <p className="mt-10 rounded-lg bg-red-900/20 p-4 text-lg text-white">
               Error: {error}
             </p>
           )}
@@ -65,7 +66,7 @@ const EarthquakeStats = () => {
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               <div className="flex h-full flex-col items-center justify-center rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
                 <h3 className="mb-4 text-2xl font-semibold text-white">
-                  <Clock className="inline-block mr-2 mb-1" /> Last 24 Hours
+                  Last 24 Hours
                 </h3>
                 <p className="mb-2 text-6xl font-bold text-white">
                   {earthquakeData.total}
@@ -75,29 +76,23 @@ const EarthquakeStats = () => {
               {earthquakeData.data[0] && (
                 <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
                   <h3 className="mb-4 text-2xl font-semibold text-white">
-                    <Activity className="inline-block mr-2 mb-1" /> Latest Event
+                    Latest Event
                   </h3>
                   <div className="space-y-2 text-left">
                     <p className="flex justify-between">
-                      <span className="text-white">
-                        <Globe2 className="inline-block mr-1 mb-1" /> Location:
-                      </span>
+                      <span className="text-white">Location:</span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].location}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">
-                        <Activity className="inline-block mr-1 mb-1" /> Magnitude:
-                      </span>
+                      <span className="text-white">Magnitude:</span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].magnitude}
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">
-                        <Clock className="inline-block mr-1 mb-1" /> Time:
-                      </span>
+                      <span className="text-white">Time:</span>
                       <span className="font-medium text-white">
                         {new Date(
                           earthquakeData.data[0].time * 1000,
@@ -105,9 +100,7 @@ const EarthquakeStats = () => {
                       </span>
                     </p>
                     <p className="flex justify-between">
-                      <span className="text-white">
-                        <Ruler className="inline-block mr-1 mb-1" /> Depth:
-                      </span>
+                      <span className="text-white">Depth:</span>
                       <span className="font-medium text-white">
                         {earthquakeData.data[0].depth} km
                       </span>
