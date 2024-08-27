@@ -17,7 +17,7 @@ export const metadata = {
     default: 'QuakeSense - Global Earthquake Alerts iOS App',
   },
   description:
-    'QuakeSense is a swiftui native app that provides global earthquake alerts. It uses the mutiple data sources to provide the most accurate and fastest alerts',
+    'QuakeSense is a swiftui native iOS app that provides global earthquake alerts. It uses the mutiple data sources to provide the most accurate and fastest alerts',
   keywords: ['QuakeSense', 'earthquake alert', 'quake alert', 'alert', 'swiftui', 'app'],
 }
 
