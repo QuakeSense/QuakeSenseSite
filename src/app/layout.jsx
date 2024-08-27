@@ -14,11 +14,11 @@ const merriweather = Merriweather({
 export const metadata = {
   title: {
     template: '%s - QuakeSense',
-    default: 'QuakeSense - Global Earthquake Alerts Native App',
+    default: 'QuakeSense - Global Earthquake Alerts iOS App',
   },
   description:
     'QuakeSense is a swiftui native app that provides global earthquake alerts. It uses the mutiple data sources to provide the most accurate and fastest alerts',
-  keywords: ['QuakeSense', 'earthquake', 'quake', 'alert', 'swiftui', 'app'],
+  keywords: ['QuakeSense', 'earthquake alert', 'quake alert', 'alert', 'swiftui', 'app'],
 }
 
 export default function RootLayout({ children }) {
