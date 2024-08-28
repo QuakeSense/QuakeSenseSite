@@ -128,7 +128,7 @@ const EarthquakeStats = () => {
   }
 
   return (
-    <section className="relative overflow-hidden border-t border-gray-200 bg-gradient-to-br py-20 sm:py-28">
+    <section id="stats" className="relative overflow-hidden border-t border-gray-200 bg-gradient-to-br py-20 sm:py-28">
       <div className="bg-grid-gray/[0.05] bg-grid-16 absolute inset-0 [mask-image:radial-gradient(gray,transparent_70%)]" />
       <Container className="relative">
         <div className="mx-auto max-w-7xl">
