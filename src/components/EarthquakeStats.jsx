@@ -10,6 +10,7 @@ import {
   Marker,
 } from 'react-leaflet'
 import L from 'leaflet'
+import markerIconUrl from '@/images/marker-icon.png'
 
 const EarthquakeStats = () => {
   const [earthquakeData, setEarthquakeData] = useState(null)
@@ -76,8 +77,7 @@ const EarthquakeStats = () => {
     }, [earthquake.magnitude])
 
     const customIcon = L.icon({
-      iconUrl:
-        'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+      iconUrl: markerIconUrl.src,
       iconSize: [15, 25],
       popupAnchor: [1, -34],
     })
