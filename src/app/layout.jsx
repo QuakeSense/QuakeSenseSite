@@ -1,4 +1,6 @@
 import { Merriweather } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -18,7 +20,14 @@ export const metadata = {
   },
   description:
     'QuakeSense is a swiftui native iOS app that provides global earthquake alerts. It uses the mutiple data sources to provide the most accurate and fastest alerts',
-  keywords: ['QuakeSense', 'earthquake alert', 'quake alert', 'alert', 'swiftui', 'app'],
+  keywords: [
+    'QuakeSense',
+    'earthquake alert',
+    'quake alert',
+    'alert',
+    'swiftui',
+    'app',
+  ],
 }
 
 export default function RootLayout({ children }) {
@@ -28,6 +37,7 @@ export default function RootLayout({ children }) {
       className={clsx('bg-gray-50 antialiased', merriweather.variable)}
     >
       <body className="font-serif">{children}</body>
+      <GoogleAnalytics gaId="G-7QC8TSJ2KT" />
     </html>
   )
 }

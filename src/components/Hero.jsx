@@ -1,14 +1,8 @@
-import Image from 'next/image'
-import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { AppDemo } from '@/components/AppDemo'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
-import logoMedium from '@/images/logos/medium.svg'
 
 function PlayIcon(props) {
   return (
@@ -64,26 +58,6 @@ export function Hero() {
               </PhoneFrame>
             </div>
           </div>
-          {/* <div className="relative mb-8 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm text-gray-900 lg:text-left">
-              As featured in
-            </p>
-            <ul
-              role="list"
-              className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
-            >
-              {[
-                ['Medium', logoMedium],
-                ['Forbes', logoForbes],
-                ['TechCrunch', logoTechcrunch],
-                ['Wired', logoWired],
-              ].map(([name, logo, className]) => (
-                <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} className="h-8" unoptimized />
-                </li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       </Container>
     </div>
