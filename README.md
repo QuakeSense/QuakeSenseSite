@@ -1,26 +1,19 @@
-# QuakeSense
+# QuakeSense: A Minimalist Native iOS App for Earthquake Alerts
 
-QuakeSense 是一个利用多个数据源提供全球地震通知的应用程序。
+![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*stTwKr2ZAfjWhiKXTQxpmg.png)
 
-核心功能：
+- Review on Medium: https://medium.com/p/1275fecf160c
 
-1. 全球主流数据源，包含：美国地质调查局（USGS）、欧洲地中海地震中心（EMSC）、中国地震台网中心（CEIC）、日本气象厅（JMA）、台湾中央气象局（CWB）等；
-2. 地震数据可视化，并提供地震详情；
-3. 服务器端的地震通知，可以实现全球地震通知，无需打开 app；
-4. 原生 Swift UI 应用程序，无广告，无隐私问题。交互简单，易于使用。
+[![](https://cdn.huhuhang.com/images/2024/09/5a902db97f96951c82922874-1725245037.png)](https://apps.apple.com/app/quakesense/id6630381970)
 
-地震预警：
+QuakeSense is an application that provides real-time global earthquake notifications using multiple data sources. With a size of less than 1 MB, it is a native SwiftUI app, ad-free, without in-app purchases, and with no privacy concerns. It is easy to get started and user-friendly.
 
-目前最为可行的地震预警方案，是利用电波比地震波快的原理。即当地震发生后，因为距离用户有一定距离，地震波传播速度比电波慢，可以利用这个时间差，提前通知用户。
+## Features:
 
-但是，这需要各环节的延时足够低，但是目前的技术无法做到足够低延时：
-
-1. 测试站收到地震波信号，存在延迟；
-2. 收到信号后，需要计算震源位置，传输到数据中心，存在延迟；
-3. 根据用户位置信息，计算与震源的距离，存在延迟；
-4. 不同地区的地质构造，导致地震波传播速度不同，需要独立计算，存在延迟；
-5. 通过 APNs 服务向大规模用户推送消息，存在延迟。
-
-所有这些延迟加起来，可能会超过地震波传播的时间，导致有效的地震预警几乎不可能在 app 端实现。
-
-所有，QuakeSense 采用的是全球地震通知，即当地震发生后，服务器端会向可能受到影响的用户推送消息，无需打开 app，即可收到地震通知。
+1. Global mainstream data sources, including: United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CEIC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), etc.;
+2. Earthquake data visualization with different map styles and detailed earthquake information;
+3. Insights into earthquake data to understand seismic activity over a period of time;
+4. Server-side earthquake notifications that enable global earthquake alerts without needing to open the app;
+5. SwiftUI native application, ad-free, with no privacy concerns; easy to use and get started;
+6. Adapted for iPad and macOS large screens;
+7. One-time payment for long-term maintenance and updates;
