@@ -10,7 +10,7 @@ const faqs = [
     {
       question: "What is the source of Quake Sense's data?",
       answer:
-        'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), and other sources.',
+        'QuakeSense uses data from the United States Geological Survey (USGS), European-Mediterranean Seismological Centre (EMSC), China Earthquake Networks Center (CENC), Japan Meteorological Agency (JMA), Taiwan Central Weather Bureau (CWB), Geoscience Australia (GA), and other sources.',
     },
     {
       question: 'Why did I get several earthquake notifications?',

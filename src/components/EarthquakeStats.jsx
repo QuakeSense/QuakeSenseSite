@@ -192,7 +192,7 @@ const EarthquakeStats = () => {
                       <p className="flex justify-between">
                         <span className="text-gray-900">Data Souce:</span>
                         <span className="font-medium text-gray-900">
-                          {earthquakeData.data[0].source}
+                          {earthquakeData.data[0].source.toUpperCase()}
                         </span>
                       </p>
                     </div>
