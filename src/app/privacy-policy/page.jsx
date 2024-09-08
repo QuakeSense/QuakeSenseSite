@@ -7,7 +7,7 @@ export default function NotFound() {
       <Container>
         <div className="mx-auto max-w-4xl px-4 py-8">
           <h1 className="mb-6 text-3xl font-bold">QuakeSense Privacy Policy</h1>
-          <p className="mb-4">Last Updated: 2024/8/18</p>
+          <p className="mb-4">Last Updated: 2024/9/8</p>
 
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">1. Introduction</h2>
@@ -52,6 +52,18 @@ export default function NotFound() {
               Notification service (APNs). This token is used to send you push
               notifications about earthquake events relevant to your location.
             </p>
+            <h4 className="mb-2 text-lg font-semibold">
+              2.2.3 Information Collection for QuakeSense Pro
+            </h4>
+            <p className="mb-4">
+              To provide earthquake notification functionality, only QuakeSense
+              Pro collects information. Free users will not have any information
+              collected. For Pro users, when earthquake notifications can no
+              longer be successfully delivered to the user's device due to
+              manual deactivation of earthquake notifications or expiration of
+              Pro benefits, the system will automatically delete the
+              corresponding device records.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -92,11 +104,15 @@ export default function NotFound() {
 
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">5. Data Security</h2>
-            <p>
+            <p className="mb-4">
               We implement appropriate technical and organizational measures to
               maintain the safety of your information. However, no method of
               transmission over the Internet or method of electronic storage is
               100% secure.
+            </p>
+            <p>
+              QuakeSense currently uses cloud infrastructure provided by
+              Cloudflare to enhance data security and service reliability.
             </p>
           </section>
 
@@ -166,8 +182,8 @@ export default function NotFound() {
             <p>
               We may update our Privacy Policy from time to time. We will notify
               you of any changes by posting the new Privacy Policy on this page
-              and updating the &quot;Last Updated&quot; date at the top of this Privacy
-              Policy.
+              and updating the &quot;Last Updated&quot; date at the top of this
+              Privacy Policy.
             </p>
           </section>
 
