@@ -59,7 +59,7 @@ export default function NotFound() {
               To provide earthquake notification functionality, only QuakeSense
               Pro collects information. Free users will not have any information
               collected. For Pro users, when earthquake notifications can no
-              longer be successfully delivered to the user's device due to
+              longer be successfully delivered to the user&apos;s device due to
               manual deactivation of earthquake notifications or expiration of
               Pro benefits, the system will automatically delete the
               corresponding device records.
