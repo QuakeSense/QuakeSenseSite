@@ -49,7 +49,7 @@ export default function NotFound() {
             <p>
               QuakeSense, 1.5 sürümünden itibaren ücretsiz + uygulama içi satın
               alma modeline geçmiştir. Daha önce ödeme yapmış olan kullanıcılar
-              QuakeSense Pro'ya kalıcı erişim hakkı kazanacaklardır. Lütfen
+              QuakeSense Pro&apos;ya kalıcı erişim hakkı kazanacaklardır. Lütfen
               değişim kodunuzu almak için feedback@quakesense.app ile iletişime
               geçin.
             </p>
