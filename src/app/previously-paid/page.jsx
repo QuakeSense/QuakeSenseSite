@@ -6,13 +6,13 @@ export default function NotFound() {
     <Layout>
       <Container>
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <h1 className="mb-6 text-3xl font-bold">Paid Earlier</h1>
+          <h1 className="mb-6 text-3xl font-bold">Previously Paid</h1>
 
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-semibold">English</h2>
             <p>
               QuakeSense has switched to a free + in-app purchase model since
-              version 1.5. Users who paid earlier will receive permanent access
+              version 1.5. Users who previously paid will receive permanent access
               to QuakeSense Pro. Please contact feedback@quakesense.app to
               obtain your redemption code.
             </p>
