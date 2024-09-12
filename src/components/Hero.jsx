@@ -7,7 +7,7 @@ import { PhoneFrame } from '@/components/PhoneFrame'
 function PlayIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <g clip-path="url(#clip0_2_2)">
+      <g clipPath="url(#clip0_2_2)">
         <path
           d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
           stroke="#D4D4D4"
