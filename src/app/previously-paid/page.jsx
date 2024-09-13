@@ -16,8 +16,14 @@ export default function NotFound() {
               access to QuakeSense Pro. Please contact feedback@quakesense.app
               to obtain your redemption code. If you do not receive a reply
               within 48 hours, please contact me again or check your spam
-              folder. You can also leave a message here:
-              https://github.com/QuakeSense/QuakeSenseSite/issues
+              folder. You can also leave a message{' '}
+              <a
+                href="https://github.com/QuakeSense/QuakeSenseSite/issues"
+                className="text-blue-600 hover:underline"
+              >
+                here
+              </a>
+              .
             </p>
           </section>
 
@@ -27,7 +33,14 @@ export default function NotFound() {
               QuakeSense 从 1.5 版本调整为免费 + 内购模式，之前已付费用户将获得
               QuakeSense Pro 的永久使用权。请联系 feedback@quakesense.app
               获取兑换码。如果 48
-              小时未收到回复，请再次联系我或者检查垃圾邮件。你还可以到这里留言：https://github.com/QuakeSense/QuakeSenseSite/issues
+              小时未收到回复，请再次联系我或者检查垃圾邮件。你还可以到
+              <a
+                href="https://github.com/QuakeSense/QuakeSenseSite/issues"
+                className="text-blue-600 hover:underline"
+              >
+                这里
+              </a>
+              留言。
             </p>
           </section>
 
@@ -37,7 +50,14 @@ export default function NotFound() {
               QuakeSense 從 1.5 版本調整為免費 + 內購模式，之前已付費用戶將獲得
               QuakeSense Pro 的永久使用權。請聯繫 feedback@quakesense.app
               獲取兌換碼。如果 48
-              小時未收到回覆，請再次聯繫我或者檢查垃圾郵件。你還可以到這裡留言：https://github.com/QuakeSense/QuakeSenseSite/issues
+              小時未收到回覆，請再次聯繫我或者檢查垃圾郵件。你還可以到
+              <a
+                href="https://github.com/QuakeSense/QuakeSenseSite/issues"
+                className="text-blue-600 hover:underline"
+              >
+                這裡
+              </a>
+              留言。
             </p>
           </section>
 
@@ -45,7 +65,14 @@ export default function NotFound() {
             <h2 className="mb-4 text-2xl font-semibold">日本語</h2>
             <p>
               QuakeSenseは1.5バージョンから無料+アプリ内課金モデルに変更されました。以前に支払いを済ませたユーザーはQuakeSense
-              Proの永久使用権を獲得します。交換コードを取得するには、feedback@quakesense.appまでご連絡ください。48時間以内に返信がない場合は、再度ご連絡いただくか、迷惑メールフォルダをご確認ください。こちらにもメッセージを残すことができます：https://github.com/QuakeSense/QuakeSenseSite/issues
+              Proの永久使用権を獲得します。交換コードを取得するには、feedback@quakesense.appまでご連絡ください。48時間以内に返信がない場合は、再度ご連絡いただくか、迷惑メールフォルダをご確認ください。
+              <a
+                href="https://github.com/QuakeSense/QuakeSenseSite/issues"
+                className="text-blue-600 hover:underline"
+              >
+                こちら
+              </a>
+              にもメッセージを残すことができます。
             </p>
           </section>
 
@@ -57,9 +84,14 @@ export default function NotFound() {
               QuakeSense Pro&apos;ya kalıcı erişim hakkı kazanacaklardır. Lütfen
               değişim kodunuzu almak için feedback@quakesense.app ile iletişime
               geçin. 48 saat içinde yanıt alamazsanız, lütfen tekrar benimle
-              iletişime geçin veya spam klasörünüzü kontrol edin. Ayrıca buraya
-              mesaj bırakabilirsiniz:
-              https://github.com/QuakeSense/QuakeSenseSite/issues
+              iletişime geçin veya spam klasörünüzü kontrol edin. Ayrıca{' '}
+              <a
+                href="https://github.com/QuakeSense/QuakeSenseSite/issues"
+                className="text-blue-600 hover:underline"
+              >
+                buraya
+              </a>{' '}
+              mesaj bırakabilirsiniz.
             </p>
           </section>
         </div>
